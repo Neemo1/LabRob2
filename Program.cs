@@ -26,8 +26,12 @@ namespace LabRob2
             Console.WriteLine("Завдання 2");
             System.Console.WriteLine("The current date and time is = " + System.DateTime.Now);
             double pi = 3.14159;
+            double a = 6;
+            double b = 11;
+            double C = a / b;
+            Console.WriteLine("Введіть х: ");
             double x1 = Convert.ToDouble(Console.ReadLine());
-            double K = 1.3 * Math.Exp(-x1 / 2) + Math.Abs(Math.Cos((2 * pi * x1 / 3) - 1.4)) + 6 / 11;
+            double K = (1.3 * Math.Exp(-x1 / 2) + Math.Abs(Math.Cos((2 * pi * x1 / 3) - 1.4)) + C);
             Console.WriteLine("x = {0} \t y = {1}", x1, K);
             System.Console.ReadLine();
             return K;
@@ -35,3 +39,4 @@ namespace LabRob2
         }
     }
 }
+
